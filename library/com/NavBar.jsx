@@ -119,7 +119,7 @@ export function NavBar() {
 
       {/* responsive menu bar for small devices */}
       <div
-        className={`grid grid-cols-1 auto-rows-max fixed z-40 bg-white gap-3  place-content-center text-center  transition-all duration-300 overflow-hidden ${
+        className={`grid text-xl grid-cols-1 auto-rows-max fixed z-40 bg-white gap-3  place-content-center text-center  transition-all duration-300 overflow-hidden ${
           OpenMenu
             ? "top-0 left-0 right-0 bottom-0"
             : "right-full top-0 left-0 bottom-0"

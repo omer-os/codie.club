@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { searchIcon } from "../images";
-import Link from 'next/link'
+import Link from "next/link";
 
 export function HomeSec3({ allTutorials, SearchBoxValue, setSearchBoxValue }) {
   return (
