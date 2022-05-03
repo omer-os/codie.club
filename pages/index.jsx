@@ -4,7 +4,7 @@ import { react, html, css, logo } from "../library/images";
 import { HomeSec1, HomeSec2, HomeSec3 } from "../library/Components";
 import Head from "next/head";
 
-export default function index() {
+export default function Index() {
   const [SearchBoxValue, setSearchBoxValue] = useState("");
   const tuts = [
     {

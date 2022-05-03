@@ -11,7 +11,7 @@ import {
 } from "../../library/images";
 import Head from "next/head";
 
-export default function index() {
+export default function Index() {
   const tuts = [
     {
       title: "React Tutorial",
