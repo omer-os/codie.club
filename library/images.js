@@ -1,7 +1,7 @@
 import logo from './imgs/logo/logo1.png';
-import {html} from './imgs/images/html.jpg';
-import {css} from './imgs/images/css.jpg';
-import {react} from './imgs/images/react.jpg';
+import html from './imgs/logo/html.png';
+import css from './imgs/logo/css.png';
+import react from './imgs/logo/react.png';
 import codingperson from './imgs/images/codingperson.svg';
 
 

@@ -15,10 +15,14 @@ export function NavBar() {
 
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        nav.classList.add("bg-white/60", "bg-opacity-[90%]", "backdrop-blur");
+        nav.classList.add(
+          "bg-[#FCEDC6]/40",
+          "bg-opacity-[90%]",
+          "backdrop-blur"
+        );
       } else {
         nav.classList.remove(
-          "bg-white/60",
+          "bg-[#FCEDC6]/40",
           "bg-opacity-[90%]",
           "backdrop-blur"
         );
@@ -123,7 +127,7 @@ export function NavBar() {
       >
         <Link href="/">
           <a
-            className={`text-gray-500 hover:text-gray-700 ${
+            className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/" ? "font-bold text-black scale-[1.09]" : ""
             }`}
           >
@@ -132,7 +136,7 @@ export function NavBar() {
         </Link>
         <Link href="/about">
           <a
-            className={`text-gray-500 hover:text-gray-700 ${
+            className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/About" ? "font-bold scale-[1.09]" : ""
             }`}
           >
@@ -141,7 +145,7 @@ export function NavBar() {
         </Link>
         <Link href="/courses">
           <a
-            className={`text-gray-500 hover:text-gray-700 ${
+            className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/Courses" ? "font-bold scale-[1.09]" : ""
             }`}
           >
@@ -150,7 +154,7 @@ export function NavBar() {
         </Link>
         <Link href="/contact">
           <a
-            className={`text-gray-500 hover:text-gray-700 ${
+            className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/Contact" ? "font-bold scale-[1.09]" : ""
             }`}
           >
