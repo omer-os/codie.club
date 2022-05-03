@@ -1,20 +1,14 @@
 import React from "react";
-import {TutorialCard} from "../Components";
+import { TutorialCard } from "../Components";
 import { motion } from "framer-motion";
-import Link from 'next/link'
+import Link from "next/link";
 
-export function HomeSec2({tuts}) {
+export function HomeSec2({ tuts }) {
   return (
     <div className="sec-2 my-[2em]  lg:px-[9em] md:px-[7em] sm:px-[5em] px-[2em] ">
       <div className="title text-3xl font-bold">our best tutorials __</div>
 
-      <div
-        className="container py-[3em] grid  gap-y-[3em] auto-rows-max
-        xl:grid-cols-3 lg:gap-x-[5em]
-        md:grid-cols-2 md:gap-x-[4em]
-        sm:grid-cols-2 sm:gap-x-[3em]
-        "
-      >
+      <div className="container py-[3em] grid  gap-y-[3em] auto-rows-max xl:grid-cols-3 lg:gap-x-[5em] md:grid-cols-2 md:gap-x-[4em] sm:grid-cols-2 sm:gap-x-[3em] ">
         {tuts.map((tut, index) => {
           return (
             <TutorialCard
@@ -23,6 +17,7 @@ export function HomeSec2({tuts}) {
               description={tut.description}
               img={tut.img}
               link={tut.link}
+              alt={tut.title}
             />
           );
         })}

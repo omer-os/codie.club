@@ -38,7 +38,7 @@ export function NavBar() {
         ref={navbar}
       >
         <div className="logo">
-          <Image src={logo} width="40px" height="30px" />
+          <Image src={logo} width={40} height={30} alt="logo" />
         </div>
 
         <div

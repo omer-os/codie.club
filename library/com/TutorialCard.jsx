@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export function TutorialCard({ title, description, img, link }) {
+export function TutorialCard({ title, description, img, link, alt }) {
   const [isHover, setIsHover] = useState(false);
   const router = useRouter();
 
@@ -37,7 +37,14 @@ export function TutorialCard({ title, description, img, link }) {
               top: isHover ? "0%" : "70%",
             }}
           >
-            <Image src={img} layout="responsive" objectFit="cover" />{" "}
+            <Image
+              src={img}
+              alt={alt}
+              layout="responsive"
+              objectFit="contain"
+              width={300}
+              height={300}
+            />
           </motion.div>
           <motion.div
             animate={{
@@ -55,15 +62,10 @@ export function TutorialCard({ title, description, img, link }) {
             }}
             className="description  text-center text-lg"
           >
-            {description}{" "}
+            {description}
           </motion.div>
         </motion.div>
       </a>
-
-
-
-
-
     </div>
   );
 }

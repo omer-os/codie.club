@@ -10,6 +10,7 @@ export function Footer() {
         <div className="logo flex gap-1 ">
           <div className="img w-[4em]">
             <Image
+              alt="logo"
               src={logo}
               layout="responsive"
               objectFit="cover"
@@ -29,7 +30,7 @@ export function Footer() {
         <div className="bg-text z-10 opacity-20 text-[13em] absolute sm:-top-[.19em] top-[1em] sm:left-auto -left-[.8em] sm:rotate-0 rotate-90 sm:right-[.5em] transition-all duration-300">
           PAGES
         </div>
-        <ul className="flex md:flex-row sm:flex-wrap flex-col  relative left-40 sm:left-0 z-20 md:text-3xl text-2xl gap-[2em] -top-[5em] sm:top-0 transition-all duration-300 ">
+        <ul className="flex md:flex-row sm:flex-wrap flex-col relative left-20 sm:left-0 z-20 md:text-3xl text-2xl gap-[2em] -top-[5em] sm:top-0 transition-all duration-300 ">
           <li>
             <Link href="/">
               <a className="hover:underline">Home</a>

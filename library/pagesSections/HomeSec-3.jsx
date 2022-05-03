@@ -20,7 +20,13 @@ export function HomeSec3({ allTutorials, SearchBoxValue, setSearchBoxValue }) {
           </label>
           <div className="relative">
             <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-              <Image layout="intrinsic" src={searchIcon} alt="" />
+              <Image
+                layout="intrinsic"
+                src={searchIcon}
+                alt="search icon"
+                width={20}
+                height={20}
+              />
             </div>
             <input
               value={SearchBoxValue}
