@@ -31,6 +31,10 @@ export function NavBar() {
     window.addEventListener("scroll", handleScroll);
   }, []);
 
+  const MenuHandler = () => {
+    setOpenMenu(!OpenMenu);
+  };
+
   return (
     <>
       <div
@@ -46,6 +50,7 @@ export function NavBar() {
         >
           <Link href="/">
             <a
+              onClick={MenuHandler}
               className={`text-gray-500 hover:text-gray-700 ${
                 pathname === "/" ? "font-bold text-black scale-[1.09]" : ""
               }`}
@@ -55,6 +60,7 @@ export function NavBar() {
           </Link>
           <Link href="/about">
             <a
+              onClick={MenuHandler}
               className={`text-gray-500 hover:text-gray-700 ${
                 pathname === "/About" ? "font-bold scale-[1.09]" : ""
               }`}
@@ -64,6 +70,7 @@ export function NavBar() {
           </Link>
           <Link href="/courses">
             <a
+              onClick={MenuHandler}
               className={`text-gray-500 hover:text-gray-700 ${
                 pathname === "/Courses" ? "font-bold scale-[1.09]" : ""
               }`}
@@ -73,6 +80,7 @@ export function NavBar() {
           </Link>
           <Link href="/contact">
             <a
+              onClick={MenuHandler}
               className={`text-gray-500 hover:text-gray-700 ${
                 pathname === "/Contact" ? "font-bold scale-[1.09]" : ""
               }`}
@@ -94,9 +102,7 @@ export function NavBar() {
 
           <div
             className="menu-btn sm:hidden flex flex-col items-center gap-2 cursor-pointer z-50 absolute right-7 top-5"
-            onClick={() => {
-              setOpenMenu(!OpenMenu);
-            }}
+            onClick={MenuHandler}
           >
             <div
               className={`
@@ -127,6 +133,7 @@ export function NavBar() {
       >
         <Link href="/">
           <a
+            onClick={MenuHandler}
             className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/" ? "font-bold text-black scale-[1.09]" : ""
             }`}
@@ -136,6 +143,7 @@ export function NavBar() {
         </Link>
         <Link href="/about">
           <a
+            onClick={MenuHandler}
             className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/About" ? "font-bold scale-[1.09]" : ""
             }`}
@@ -145,6 +153,7 @@ export function NavBar() {
         </Link>
         <Link href="/courses">
           <a
+            onClick={MenuHandler}
             className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/Courses" ? "font-bold scale-[1.09]" : ""
             }`}
@@ -154,6 +163,7 @@ export function NavBar() {
         </Link>
         <Link href="/contact">
           <a
+            onClick={MenuHandler}
             className={`text-gray-500 mx-auto block hover:text-gray-700 ${
               pathname === "/Contact" ? "font-bold scale-[1.09]" : ""
             }`}

@@ -19,14 +19,14 @@ export function Footer() {
           </div>
           <div className="text-5xl font-bold">Club</div>
         </div>
-        <div className="text-xl text-[#FF9800]">
+        <div className="text-xl text-[#934301]">
           We offer the best coding courses to help you learn to code quickly and
           easily So what are you waiting for? Come and learn to code with us
           today!
         </div>
       </div>
 
-      <div className="right-container flex items-center justify-center text-[#FF9800]">
+      <div className="right-container flex items-center justify-center text-[#934301]">
         <div className="bg-text z-10 opacity-20 text-[13em] absolute sm:-top-[.19em] top-[1em] sm:left-auto -left-[.8em] sm:rotate-0 rotate-90 sm:right-[.5em] transition-all duration-300">
           PAGES
         </div>

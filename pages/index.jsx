@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
 import { react, html, css, logo } from "../library/images";
-import {
-  HomeSec1,
-  HomeSec2,
-  HomeSec3,
-} from "../library/Components";
+import { HomeSec1, HomeSec2, HomeSec3 } from "../library/Components";
 import Head from "next/head";
 
 export default function index() {
@@ -48,7 +44,6 @@ export default function index() {
     <Layout>
       <Head>
         <title>Home Page</title>
-
         <meta
           name="description"
           content="best platform for learning to code. web development and programming languages."

@@ -1,7 +1,15 @@
 import React from "react";
 import { TutorialCard } from "../../library/Components";
 import Layout from "../Layout";
-import { html, css, react, javascript, python, tailwindcss } from "../../library/images";
+import {
+  html,
+  css,
+  react,
+  javascript,
+  python,
+  tailwindcss,
+} from "../../library/images";
+import Head from "next/head";
 
 export default function index() {
   const tuts = [
@@ -34,26 +42,48 @@ export default function index() {
       link: "/courses/javascript",
     },
     {
-        title: "Python Tutorial",
-        description: "Python is a general-purpose, high-level programming language.",
-        img: python,
-        link: "/courses/python",
+      title: "Python Tutorial",
+      description:
+        "Python is a general-purpose, high-level programming language.",
+      img: python,
+      link: "/courses/python",
     },
     {
-        title: "Tailwind CSS Tutorial",
-        description: "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.",
-        img: tailwindcss,
-        link: "/courses/tailwindcss",
-    }
-
+      title: "Tailwind CSS Tutorial",
+      description:
+        "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.",
+      img: tailwindcss,
+      link: "/courses/tailwindcss",
+    },
   ];
 
   return (
     <Layout>
-      <div className="container pb-[4em] pt-[6em]">
-        <div className="title text-3xl font-bold text-center">Our Courses</div>
+      <Head>
+        <title>Home Page</title>
+        <meta
+          name="description"
+          content="best platform for learning to code. web development and programming languages."
+        />
+        <meta
+          name="keywords"
+          content="web development, programming languages, web development courses, programming languages courses, web development tutorials, programming languages tutorials"
+        />
+        <meta name="author" content="omar ch." />
+        <meta name="copyright" content="omer-os" />
+        <meta name="robots" content="index, follow" />
+      </Head>
 
-        <div className="grid grid-cols-4 gap-[2em] mt-[2em] mx-auto px-[5em]">
+      <div className="flex flex-col items-center pb-[4em] pt-[6em]">
+        <div className="title text-3xl font-bold text-center">Our Courses</div>
+        <div
+          className="grid gap-[2em] mt-[2em] sm:px-[5em] px-[3em]
+        lg:grid-cols-4
+        md:grid-cols-3
+        sm:grid-cols-2
+        grid-cols-1
+        "
+        >
           {tuts.map((tut, index) => {
             return (
               <TutorialCard
