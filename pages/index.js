@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from './Layout'
 
 export default function index() {
   return (
-    <div>index</div>
-  )
+    <Layout>
+      <h1 className='text-red-500'>Hello Next.js</h1>
+    </Layout>
+    )
 }
