@@ -1,5 +1,5 @@
 import React from "react";
-import { TutorialCard } from "../Components";
+import { TutorialCard } from "../components";
 import { motion } from "framer-motion";
 import Link from "next/link";
 

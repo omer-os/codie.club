@@ -1,5 +1,5 @@
 import React from "react";
-import { TutorialCard } from "../../library/Components";
+import { TutorialCard } from "../../library/components";
 import Layout from "../Layout";
 import {
   html,

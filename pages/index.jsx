@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
 import { react, html, css, logo } from "../library/images";
-import { HomeSec1, HomeSec2, HomeSec3 } from "../library/Components";
+import { HomeSec1, HomeSec2, HomeSec3 } from "../library/components";
 import Head from "next/head";
 
 export default function Index() {

@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBar, Footer } from "../library/Components";
+import { NavBar, Footer } from "../library/components";
 import Head from "next/head";
 export default function Layout({ children }) {
   return (
