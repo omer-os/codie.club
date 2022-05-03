@@ -6,12 +6,25 @@ export default function index() {
   return (
     <Layout>
       <div className="sec-1 grid w-full place-content-center mb-2 bg-[#FCEDC6] h-screen">
-        <div className="con w-9/12 m-auto flex gap-[5em] items-center">
-          <div className="flex gap-3 flex-col">
-            <div className="font-bold text-4xl">
+        <div
+          className="
+        
+        
+        con lg:w-9/12 lg:gap-[5em]
+        md:w-8/12 md:gap-[4em]
+        sm:w-7/12 sm:gap-[3em]
+        flex items-center
+        sm:flex-row
+        flex-col-reverse
+        m-auto "
+        >
+          <div className="flex sm:bg-transparent rounded-tr-2xl rounded-br-2xl bg-white/60 gap-3 z-20 sm:static 
+          relative -left-6 pl-6
+          sm:backdrop-none backdrop-blur-sm sm:mx-0 mx-6 flex-col sm:p-0 p-4   ">
+            <div className="font-bold sm:text-4xl text-3xl">
               the right place for learning to code
             </div>
-            <div className="text-xl">
+            <div className="sm:text-xl text-lg">
               We offer the best coding courses to help you learn to code quickly
               and easily So what are you waiting for? Come and learn to code
               with us today!
@@ -24,38 +37,14 @@ export default function index() {
             </div>
           </div>
 
-          <div className="w-[55em] relative z-10">
-            <Image
-              src={codingperson}
-              layout="responsive"
-              className="w-full h-full"
-              objectFit="cover"
-            />
+          <div className="sm:w-[55em] w-[20em] sm:top-0 sm:relative absolute right-0 top-20 z-10">
+            <Image src={codingperson} layout="responsive" objectFit="cover" />
           </div>
         </div>
       </div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia adipisci,
-      unde, ut recusandae dolores velit atque dolore consectetur laborum odit
-      sed enim numquam aperiam fugiat nemo alias aut, voluptatum laudantium
-      tenetur qui architecto! Dignissimos neque modi quis ab, magnam rerum
-      dolorem cum similique. Deleniti sunt natus laborum ducimus harum minima
-      quos quibusdam, laudantium culpa, error voluptate laboriosam ea nobis
-      provident nisi velit amet rem a rerum repellendus aliquid aspernatur
-      facilis delectus tenetur. Iure quisquam repellendus voluptatibus adipisci
-      nemo quas aliquid distinctio maiores voluptate, debitis impedit? A,
-      cumque. Facere suscipit dolore recusandae illo, praesentium, ex maiores
-      necessitatibus reiciendis repudiandae, excepturi asperiores eius. Ex
-      facilis deleniti eaque quo laborum consectetur provident quas amet nam
-      minus deserunt numquam facere similique cupiditate laudantium impedit
-      animi, rem, unde, sequi voluptas non in. Enim omnis unde, molestias fuga
-      eligendi, sed vel hic pariatur dolor aliquid adipisci tenetur, impedit
-      facilis earum cumque fugit atque ipsum a minima consequuntur
-      exercitationem corporis. Iusto at illo molestias eos quis, hic corporis
-      repellendus voluptatem, cumque mollitia quidem provident, tenetur sequi
-      itaque dolor asperiores suscipit accusamus ullam incidunt ipsam maxime.
-      Tempora aut, deleniti quaerat eligendi, harum ratione similique error
-      repellat officiis omnis ex repellendus perferendis vitae! Accusamus vero
-      illo tenetur quasi ullam.
+
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cumque aperiam nulla maiores ab ex corrupti molestias architecto dolore quidem nobis, sequi enim blanditiis ducimus, possimus voluptas et odio incidunt!
     </Layout>
   );
 }

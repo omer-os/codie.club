@@ -15,9 +15,13 @@ export function NavBar() {
 
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        nav.classList.add("bg-white", "bg-opacity-[90%]", "backdrop-blur");
+        nav.classList.add("bg-white/60", "bg-opacity-[90%]", "backdrop-blur");
       } else {
-        nav.classList.remove("bg-white", "bg-opacity-[90%]", "backdrop-blur");
+        nav.classList.remove(
+          "bg-white/60",
+          "bg-opacity-[90%]",
+          "backdrop-blur"
+        );
       }
     };
     window.addEventListener("scroll", handleScroll);
