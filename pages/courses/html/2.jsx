@@ -1,24 +1,62 @@
 import Layout from "../../Layout";
-import Image from "next/image";
 import Link from "next/link";
-import Head from "next/head";
+
+import { StartingPoint } from "./index";
+import { Head1, Head2 } from "./index";
+import { TextContent } from "./index";
+import { Code } from "./index";
+import { BottomNavigation } from "./index";
 
 export default function Two() {
   return (
     <Layout>
-      <div className="mt-[8em] mx-auto gap-3 sm:w-9/12 px-[2em] mb-[3em] flex flex-col gap-[2em]">
-        <div className="text-2xl font-bold">HTML Headings</div>
-        <div className="text-md text-gray-400 max-w-[500px]">
+      <StartingPoint>
+        <Head1>How to create html file</Head1>
+        <TextContent>
+          <ol>
+            <li>
+              write your code. you can use{" "}
+              <a
+                className="text-blue-600 underline"
+                href="https://code.visualstudio.com/download"
+              >
+                vscode editor
+              </a>{" "}
+              or simple notepad. <br /> <br />
+              <img
+                src="https://www.udacity.com/blog/wp-content/uploads/2020/06/Screen-Shot-2020-06-24-at-12.36.25-PM.png.webp"
+                alt="write code"
+              />{" "}
+              <br />
+              <br />
+            </li>
+            <li>
+              save your code in a file that ends with .html like mycode.html{" "}
+              <br />
+              <br />
+            </li>
+            <li>
+              If you save the code in a file ending in .html and open it in a
+              web browser, it will render a simple HTML web page for you: <br />
+              <br />
+              <img
+                src="https://www.udacity.com/blog/wp-content/uploads/2020/06/Screen-Shot-2020-06-24-at-12.39.15-PM.png.webp"
+                alt="html page"
+              />
+            </li>
+          </ol>
+        </TextContent>
+
+        <br />
+        <Head1>HTML Headings</Head1>
+        <TextContent>
           HTML includes six levels of headings, which are ranked according to
           importance. These are {"<h1>, <h2>, <h3>, <h4>, <h5>, and <h6>"}.
-        </div>
-        <div className="font-bold">
-          The following code defines all of the headings:
-        </div>
+        </TextContent>
+        <Head2>The following code defines all of the headings:</Head2>
 
-        <pre className="text-sm bg-[#292929] text-gray-400 p-4 rounded-lg overflow-auto">
-          <code>
-            {`<!DOCTYPE html>
+        <Code>
+          {`<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Document</title>
@@ -33,43 +71,31 @@ export default function Two() {
   </body>
 </html>
 `}
-          </code>
-        </pre>
-      </div>
+        </Code>
+
+        <br />
+        <hr />
+        <br />
+
+<Head2>Notes:</Head2>
+<TextContent>All HTML documents must start with a document type declaration: {`<!DOCTYPE html>.`}</TextContent>
+<TextContent>The HTML document itself begins with {'<html>'} and ends with {'</html>'}</TextContent>
 
 
-      <div className="text-2xl font-bold text-center">Result:</div>
+        <Head2>Result:</Head2>
 
+        <img
+          src="https://api.sololearn.com/DownloadFile?id=2532"
+          className="mx-auto "
+          alt="result"
+        />
+        <br />
 
-
-
-      <img
-        src="https://api.sololearn.com/DownloadFile?id=2532"
-        className="mx-auto "
-        alt="result"
-      />
-      <br />
-
-
-
-
-
-
-
-      <div className="btns flex gap-3 w-full justify-between sm:px-[5em] px-[2em]">
-        <Link href="/courses/html">
-          <a className="bg-[#FF9800] w-max font-bold py-2 px-4 sm:text-lg text-white">
-            Previous Lesson
-          </a>
-        </Link>
-        <Link href="/courses/html/3">
-          <a className="bg-[#FF9800] w-max font-bold py-2 px-4 sm:text-lg text-white">
-            Next Lesson
-          </a>
-        </Link>
-      </div>
-
-      <br />
+        <BottomNavigation
+          previousLink="/courses/html"
+          nextLink="/courses/html/3"
+        />
+      </StartingPoint>
     </Layout>
   );
 }

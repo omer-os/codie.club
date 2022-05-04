@@ -65,6 +65,13 @@ export default function Index() {
       img: html,
       link: "/courses/html",
     },
+    {
+      title: "Css Tutorial",
+      description:
+        "Css is a style sheet language used for describing the presentation of a document written in a markup language.",
+      img: css,
+      link: "/courses/css",
+    },
   ];
 
   return (

@@ -1,24 +1,21 @@
 import Layout from "../../Layout";
-import Image from "next/image";
-import Link from "next/link";
-import Head from "next/head";
+import { StartingPoint } from "./index";
+import { Head1, Head2 } from "./index";
+import { TextContent } from "./index";
+import { Code } from "./index";
+import { BottomNavigation } from "./index";
 
 export default function Three() {
   return (
     <Layout>
-      <div className="mt-[8em] mx-auto gap-3 sm:w-9/12 px-[2em] mb-[3em] flex flex-col gap-[2em]">
-        <div className="text-2xl font-bold">Horizontal Lines
-</div>
-        <div className="text-md text-gray-400 max-w-[500px]">
-        To create a horizontal line, use the {`<hr>`} tag.
-        </div>
-        {/* <div className="font-bold">
-          The following code defines all of the headings:
-        </div> */}
+      <StartingPoint>
+        <Head1>Horizontal Lines</Head1>
+        <TextContent>
+          To create a horizontal line, use the {`<hr>`} tag.
+        </TextContent>
 
-        <pre className="text-sm bg-[#292929] text-gray-400 p-4 rounded-lg overflow-auto">
-          <code>
-            {`<!DOCTYPE html>
+        <Code>
+          {`<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Document</title>
@@ -34,33 +31,22 @@ export default function Three() {
     <p>This is paragraph</p>
   </body>
 </html>`}
-          </code>
-        </pre>
-      </div>
+        </Code>
 
-      <div className="text-2xl font-bold text-center">Result:</div>
+        <Head2>Result:</Head2>
 
-      <img
-        src="https://api.sololearn.com/DownloadFile?id=2533"
-        className="mx-auto "
-        alt="result"
-      />
-      <br />
+        <img
+          src="https://api.sololearn.com/DownloadFile?id=2533"
+          className="mx-auto "
+          alt="result"
+        />
+        <br />
 
-      <div className="btns flex gap-3 w-full justify-between sm:px-[5em] px-[2em]">
-        <Link href="/courses/html/2">
-          <a className="bg-[#FF9800] w-max font-bold py-2 px-4 sm:text-lg text-white">
-            Previous Lesson
-          </a>
-        </Link>
-        <Link href="/courses/html/4">
-          <a className="bg-[#FF9800] w-max font-bold py-2 px-4 sm:text-lg text-white">
-            Next Lesson
-          </a>
-        </Link>
-      </div>
-
-      <br />
+        <BottomNavigation
+          previousLink="/courses/html/2"
+          nextLink="/courses/html/4"
+        />
+      </StartingPoint>
     </Layout>
   );
 }
