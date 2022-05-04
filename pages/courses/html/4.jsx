@@ -7,19 +7,15 @@ export default function Four() {
   return (
     <Layout>
       <div className="mt-[8em] mx-auto gap-3 sm:w-9/12 px-[2em] mb-[3em] flex flex-col gap-[2em]">
-        <div className="text-2xl font-bold">Comments
-</div>
+        <div className="text-2xl font-bold">Comments</div>
         <div className="text-md text-gray-400 max-w-[500px]">
-        The browser does not display comments, but they help document the HTML and add descriptions, reminders, and other notes.
+          The browser does not display comments, but they help document the HTML
+          and add descriptions, reminders, and other notes.
         </div>
         <pre className="text-sm bg-[#292929] text-gray-400 p-4 rounded-lg overflow-auto">
-          <code>
-            {`<!-- Your comment goes here -->`}
-          </code>
+          <code>{`<!-- Your comment goes here -->`}</code>
         </pre>
-        <div className="font-bold">
-        Example:
-        </div>
+        <div className="font-bold">Example:</div>
 
         <pre className="text-sm bg-[#292929] text-gray-400 p-4 rounded-lg overflow-auto">
           <code>

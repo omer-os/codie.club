@@ -6,38 +6,54 @@ import Head from "next/head";
 
 export default function Index() {
   const [SearchBoxValue, setSearchBoxValue] = useState("");
-  const tuts = [
-    {
-      title: "React Tutorial",
-      description:
-        "React is a declarative, efficient, and flexible JavaScript library.",
-      img: react,
-      link: "/courses/react",
-    },
 
+  // const tuts = [
+  //   {
+  //     title: "React Tutorial",
+  //     description:
+  //       "React is a declarative, efficient, and flexible JavaScript library.",
+  //     img: react,
+  //     link: "/courses/react",
+  //   },
+
+  //   {
+  //     title: "Html Tutorial",
+  //     description:
+  //       "Html is the standard markup language for creating web pages and web applications.",
+  //     img: html,
+  //     link: "/courses/html",
+  //   },
+  //   {
+  //     title: "Css Tutorial",
+  //     description:
+  //       "Css is a style sheet language used for describing the presentation of a document written in a markup language.",
+  //     img: css,
+  //     link: "/courses/css",
+  //   },
+  // ];
+
+  // const allTutorials = [
+  //   "react",
+  //   "html",
+  //   "css",
+  //   "jvascript",
+  //   "python",
+  //   "angular",
+  // ];
+
+
+  const tuts = [
     {
       title: "Html Tutorial",
       description:
         "Html is the standard markup language for creating web pages and web applications.",
       img: html,
       link: "/courses/html",
-    },
-    {
-      title: "Css Tutorial",
-      description:
-        "Css is a style sheet language used for describing the presentation of a document written in a markup language.",
-      img: css,
-      link: "/courses/css",
-    },
+    }
   ];
 
   const allTutorials = [
-    "react",
     "html",
-    "css",
-    "jvascript",
-    "python",
-    "angular",
   ];
 
   return (
